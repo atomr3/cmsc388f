@@ -1,3 +1,5 @@
+{-# LANGUAGE MultiParamTypeClasses #-}
+
 module Set(Set(..)) where
 
 	class Set s a where
