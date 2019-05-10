@@ -28,9 +28,7 @@ import Control.Monad.Cont
 newtype Thread r m a = Thread {runThread' :: ContT r (StateT [Thread r m ()] m) a}
     deriving (Functor,Applicative,Monad,MonadCont,MonadIO)   
 
--- Used to manipulate the coroutine queue.
--- putsts :: Monad m => [Thread r m ()] -> Thread r m ()
--- putsts = Thread . lift . put 
+-- Need lift!
 
 -- Our yield func definition, which essentially pauses the current, running routine.
 -- It generates the function arg for CallCC, k, in which you queue k () by appending it to a list, and then dequeue, 
