@@ -14,4 +14,16 @@
 module Main where
 import Data.Monoid
 
-main = putStrLn "Hello World"
+--I think this is also acceptable
+--newtype Queue a = Queue [a] deriving (Show, Eq, Read)
+
+data Queue a = Empty | Value a (Queue a) deriving (Show, Eq, Read)
+
+push :: a -> Queue a -> Queue a
+push x Empty = Value x Empty
+push x (Value a pointer) = Value a (push x pointer)
+
+pop :: Queue a -> Maybe (a, Queue a)
+pop Empty = Nothing
+pop (Value a pointer) = Just (a, pointer)
+
