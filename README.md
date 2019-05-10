@@ -11,7 +11,7 @@ A Continuation itself is essentially the representation of the execution state o
   * Early returns
   * **Simple Concurrency**
   
-We're going to explore how CPS is expressed with Monads by implementing a very simple form of concurrency, coroutines, also known as cooperative multithreading. This is a form of threading in which each thread manually `yields` instead of being paused preemptively. Our general description is that we create a Monad which has both the ability to queue the state of a paused operation, as well as suspend the working operation.
+We're going to explore how CPS is expressed with Monads by implementing a very simple form of concurrency, coroutines, also known as cooperative multithreading. This is a form of threading in which each thread manually `yields` instead of being paused preemptively by a scheduler. Our general description is that we create a Monad which has both the ability to queue the state of a paused operation, as well as suspend the working operation.
 
 ## Collaborators
 Anand Raghu  
