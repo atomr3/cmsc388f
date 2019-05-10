@@ -3,6 +3,7 @@ Group project for 388F Spring 2019, Functional Pearls
 
 ## Project Outline
 This project discusses the idea of Continuations or Continuation Passing Style in Haskell.
+A suspended computation is a function of the form (a -> r) -> r.  The a -> r is known as the continuation.  A typical cps function looks like a normal function except that it also takes a continuation.  The output of the program is then given to the continuation and returned.
 
 A Continuation itself is essentially the representation of the execution state of a computation, which means that functions don't return values, instead they direct control to a continuation. This is a great way to deal with altering control flow of programs/operations, such as
 
@@ -24,7 +25,7 @@ https://wiki.haskell.org/Continuation
 http://matt.might.net/articles/programming-with-continuations--exceptions-backtracking-search-threads-generators-coroutines/
 http://www.cs.umd.edu/class/spring2019/cmsc388F/lectures/monads.html  
 http://hackage.haskell.org/package/mtl-2.2.2/docs/Control-Monad-Cont.html#t:Cont  
-https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style#Example:_Implementing_pattern_matching
+https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style#
 https://en.wikipedia.org/wiki/Continuation-passing_style  
 http://www.madore.org/~david/computers/callcc.html  
 
