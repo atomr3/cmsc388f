@@ -24,6 +24,7 @@ https://wiki.haskell.org/Continuation
 http://matt.might.net/articles/programming-with-continuations--exceptions-backtracking-search-threads-generators-coroutines/
 http://www.cs.umd.edu/class/spring2019/cmsc388F/lectures/monads.html  
 http://hackage.haskell.org/package/mtl-2.2.2/docs/Control-Monad-Cont.html#t:Cont  
+https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style#Example:_Implementing_pattern_matching
 https://en.wikipedia.org/wiki/Continuation-passing_style  
 http://www.madore.org/~david/computers/callcc.html  
 
